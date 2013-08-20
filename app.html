@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title></title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="application.js"></script>
+    <style>
+    #main-form { margin: 0 auto; }
+      #title { float: left; padding-right: 10px;}
+      #content { float: left;}
+
+    </style>
+  </head>
+
+
+  <body>
+
+    <div id="main-form">
+     
+        <div id="title"><h3>Title</h3><input id="title-input" type="text" name="title"> </div>
+        <div id="content"><h3>Content</h3><textarea id="content-input" $type="text" name="content"></textarea> </div>
+       
+      <button class="add-todo">Add a todo</button> 
+    </div>
+    <br><br><br><br>
+
+    <div id="todo-list">
+
+    </div>
+
+    <div id="todo-template" style="display: none;">
+      <div id="todo-render">
+        <h3 class="title-render">Title:<span></span></h3>  
+        <h3 class="content-render">Content:<span></span></h3>
+        <ul>
+          <a href="#" class="delete"><button>Delete</button></a>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+
+</html>
